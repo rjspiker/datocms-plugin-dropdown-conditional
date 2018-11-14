@@ -31,8 +31,8 @@
       ],
       "instance": [
         {
-          "id": "slaveFields",
-          "label": "JSON object of fields that will be toggled based upon this field's value",
+          "id": "options",
+          "label": "Conditional Select Options",
           "type": "json",
           "required": true,
           "hint": "Link to documentation here"
