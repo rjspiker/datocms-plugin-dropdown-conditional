@@ -13,6 +13,33 @@
   "keywords": [],
   "author": "RJ Spiker - HashiCorp",
   "license": "ISC",
+  "datoCmsPlugin": {
+    "title": "Conditional (Select)",
+    "entryPoint": "dist/index.html",
+    "fieldTypes": [
+      "json"
+    ],
+    "pluginType": "field_editor",
+    "parameters": {
+      "global": [
+        {
+          "id": "developmentMode",
+          "label": "Development mode?",
+          "type": "boolean",
+          "hint": "Enable development logs on the console"
+        }
+      ],
+      "instance": [
+        {
+          "id": "slaveFields",
+          "label": "JSON object of fields that will be toggled based upon this field's value",
+          "type": "json",
+          "required": true,
+          "hint": "Link to documentation here"
+        }
+      ]
+    }
+  },
   "dependencies": {
     "datocms-plugins-sdk": "0.0.7"
   },
